@@ -1,0 +1,105 @@
+.calc-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: stretch;
+  background-color: #e8ddd0;
+  border-radius: 12px;
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.5);
+  padding: 10px;
+}
+
+.calc-screen {
+  background-color: #a0b9a2;
+  border-radius: 8px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #32393e;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  text-align: right;
+}
+
+.calc-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.calc-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 1px solid #dedede;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  margin: 5px 5px 0px 0px;
+  color: #333333;
+  user-select: none;
+  font-weight: 700;
+}
+
+.calc-button:focus {
+  box-shadow: inset 2px 2px 1px 1px rgba(0,0,0,0.25);
+}
+
+.calc-actions .calc-button {
+  border: 1px solid #c6c6c6;
+  background-color: #d2d2d2;
+  margin: 5px 0px 0px 0px;
+}
+
+.calc-button.calc-button-clean {
+  border: 1px solid #d14700;
+  background-color: #ff8019;
+}
+
+.calc-button.calc-button-result {
+  border: 1px solid #3079ed;
+  background-color: #4c8ffc;
+}
+
+.calc-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.calc-numbers {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 145px;
+}
+
+.calc-button.button-ravno {
+  border: 1px solid #3079ed;
+  background-color: #4d90fd;
+}

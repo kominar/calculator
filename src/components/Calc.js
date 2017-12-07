@@ -7,7 +7,14 @@ import Result from './Result'
 export default class Calc extends React.Component {
   constructor(props) {
     super(props)
-    
+
+    this.state = {
+      firstNumber: '',
+      secondNumber: '',
+      action: '',
+      result: 0,
+    }
+
     this.setNumber = this.setNumber.bind(this);
     this.setAction = this.setAction.bind(this);
     this.setResult = this.setResult.bind(this);
